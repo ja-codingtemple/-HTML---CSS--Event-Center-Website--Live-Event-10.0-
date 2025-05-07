@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*********** NAVIGATION STYLING ***********/
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(36, 61, 61);
+}
+
+.site-logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+}
+
+/*********** MAIN CONTENT STYLING ***********/
+.site-main {
+    padding: 20px;
+}
+
+.welcome {
+    background-color: rgb(39, 72, 80);
+    padding: 40px 20px;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.welcome:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*********** EVENTS STYLING ***********/
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 25px;
+}
+
+/* Individual event styling */
+.event {
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: black 1px solid;
+}
+
+/* Individual event image styling */
+.event img {
+    width: 100%;
+}
+
+/* Event Grid styling */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Media query for tablets: 768 pixels in width or less */
+@media screen and (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media query for cell phones: 600 pixels in width or less */
+@media screen and (max-width: 600px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Flexbox styling */
+.events-flexbox {
+    display: flex;
+    /* The default flex-direction
+    for a flexbox is a row, so..
+    technically, you do not have to
+    explicitly define this if you want
+    the child elements to appear in a row */
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(83, 161, 83);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(36, 201, 36);
+    padding: 12px;
+    border-radius: 8px;
+    border-width: 6px;
+    border-color: rgb(36, 201, 36); 
+}
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
